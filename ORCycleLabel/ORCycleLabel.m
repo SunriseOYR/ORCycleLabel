@@ -39,6 +39,25 @@
     return [self initWithFrame:CGRectMake(0, 0, 100, 30)];
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _width = self.frame.size.width;
+    _height = self.frame.size.height;
+    [self initUSerInterface];
+    
+    [self start];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    _width = self.frame.size.width;
+    _height = self.frame.size.height;
+    [self labelAttrbuits];
+    
+    [self start];
+    
+}
+
 #pragma mark -- private
 - (void)initUSerInterface {
     self.clipsToBounds = YES;
@@ -81,12 +100,10 @@
     
     if (_width - maxX1 >= _interval || (frame2.origin.x > -_textWidth && maxX2 < _width + _textWidth)) {
         frame2.origin.x -= _distance;
-        NSLog(@"1111");
     }
     
     if (_width - maxX2 >= _interval || (frame1.origin.x > -_textWidth && maxX1 < _width + _textWidth)) {
         frame1.origin.x -= _distance;
-        NSLog(@"2222");
     }
     
     if (maxX1 < -3) {
@@ -99,8 +116,6 @@
     
     self.label1.frame = frame1;
     self.label2.frame = frame2;
-    
-    
     
 }
 
