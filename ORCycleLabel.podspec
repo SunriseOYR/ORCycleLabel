@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "ORCycleLabel"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.ios.deployment_target = '7.0'
     s.summary      = "A label which support loop rolling"
     s.homepage     = "https://github.com/SunriseOYR/ORCycleLabel.git"
