@@ -22,3 +22,7 @@
     
 * 支持xib 拖拽  
 ![](https://github.com/SunriseOYR/ORCycleLabel/blob/master/showImg/xib.png?raw=true)  
+
+* 效果图   
+![](https://github.com/SunriseOYR/ORCycleLabel/blob/master/showImg/CycleShow.gif?raw=true)
+
