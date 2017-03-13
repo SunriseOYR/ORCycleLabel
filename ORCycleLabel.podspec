@@ -10,6 +10,5 @@ Pod::Spec.new do |s|
     s.social_media_url   = ""
     s.source       = { :git => "https://github.com/SunriseOYR/ORCycleLabel.git", :tag => s.version }
     s.source_files  = "ORCycleLabel/*.{h,m}"
-    s.resources          = ""
     s.requires_arc = true
 end
